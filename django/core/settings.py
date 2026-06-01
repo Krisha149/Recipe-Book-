@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-34q84%pc)mo@mghoc(1ap)t27nzjti65e@t=3-c9392nn@2_#t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['recipe-book-jv8f.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -148,7 +148,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://recipe-book-jv8f.onrender.com',  # add this
 ]
 
 # Custom user model
